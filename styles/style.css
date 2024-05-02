@@ -1,0 +1,36 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+.receitas-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+.receita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  overflow: hidden;
+}
+
+.receita h2 {
+  margin-bottom: 10px;
+}
+.receita img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  transition: box-shadow 0.5s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.receita a:hover img {
+  transform: translateY(-5px); /* Elevação na vertical */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra aumentada */
+}
